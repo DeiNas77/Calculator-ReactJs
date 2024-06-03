@@ -1,0 +1,121 @@
+.Container {
+  background-image: url('../assets/imagen.jpg');
+  background-repeat: no-repeat;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  display: grid;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.Grid__Container {
+  display: grid;
+  grid-template-columns: repeat(4, 5rem);
+  gap: 0.5rem;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  background: var(--Grid__Container);
+  transition: background-color 0.5s ease;
+}
+.Grid__display {
+  grid-column: span 4;
+  font-size: 2.5rem;
+  text-align: right;
+  background-color: var(--Grid__Container);
+  color: var( --Grid__color-input-display);
+  border: none;
+  transition: background-color 0.5s ease;
+}
+.Grid__result {
+  grid-column: span 4;
+  text-align: right;
+  font-size: 1.5rem;
+  background-color: var(--Grid__Container);
+  color: var(  --Grid__color-input-result);
+  border: none;
+  transition: background-color 0.5s ease;
+}
+.Grid__Contain{
+  display: grid;
+}
+.Button_parenthesis{
+  grid-column: span 2;
+}
+.Button__special {
+  height: 4rem;
+  width: 100%;
+  border-radius: 0.7rem;
+  font-size: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: var( --Grid__button-special-colorText);
+  background-color: var( --Grid__button-special);
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+.Button__special:active{
+  background-color: var(--Grid__button-special-active);
+}
+.Button__normal {
+  align-items: center;
+  font-size: 2.5rem;
+  height: 4rem;
+  width: 4.5rem;
+  border-radius: 0.7rem;
+  border: none;
+  cursor: pointer;
+  background-color: var( --Grid__button-normal);
+  color: var(--Grid__button-normal-color);
+  transition: background-color 0.5s ease;
+}
+.Button__normal:active{
+ background-color: var( --Grid__button-normal-active);
+}
+.Button__delete {
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 2.5rem;
+  height: 4rem;
+  width: 4.5rem;
+  border-radius: 0.7rem;
+  color: var(--Grid__button-special-colorText);
+  background-color: var(--Grid__button-delete);
+  cursor: pointer;
+}
+.Button__delete:active{
+  background-color: var(--Grid__button-delete-active);
+}
+.Button__icon-delete{
+  position: relative;
+  right: .1rem;
+  top: .2rem ;
+}
+@media screen and (max-width: 480px){
+  .Grid__Container{
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+@media screen and (max-width: 360px){
+  .Grid__Container{
+    grid-template-columns: repeat(4,2.5rem);
+  }
+  .Button__special{
+    height: 2rem;
+    font-size: 1.5rem;
+  }
+  .Button__normal{
+    height: 2rem;
+    width: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .Button__delete{
+    height: 2rem;
+    width: 2.5rem;
+    font-size: 1.5rem;
+  }
+}

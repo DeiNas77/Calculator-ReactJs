@@ -1,0 +1,225 @@
+.Header__nav {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--Header-bg);
+  transition: background-color .5s ease;
+}
+.Header__nav-calculator {
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-size: 2.2rem;
+  align-self: center;
+}
+.Header__nav-link-calculator {
+  text-decoration: none;
+  color: var(--Header__nav-link-icon);
+  transition: color 0.2s ease;
+}
+.Header__nav-link-calculator:hover{
+  color:  var(--Header__a-hover);
+
+}
+.Header__nav-link-icon {
+  position: relative;
+  top: 0.3rem;
+}
+.Header__Menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+}
+.Header__Menu-Icon {
+  color: var(--Header__icon-menu);
+  font-size: 4rem;
+  cursor: pointer;
+}
+.Header__div-sun {
+  position: absolute;
+}
+
+.Header__nav-div--ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.Header__nav-div--ul-close{
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.Header__li {
+  padding: 0.2rem;
+  position: relative;
+  bottom: 0.2rem;
+}
+.Header__li-More {
+  border: 2px var( --Header__li-More) solid;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  padding: 0.7rem;
+  transition: border 1s ease;
+}
+.Header__li-More:hover {
+  background-color: var(--Header__a-More-Background)
+}
+.Header__a {
+  text-decoration: none;
+  color: var(--Header__a);
+  font-size: 1.2rem;
+  padding-right: 0.5rem;
+  transition: color 0.2s ease;
+}
+.Header__a:hover {
+  color:  var(--Header__a-hover);
+  transition: color 0.2s ease;
+  transform: rotateX(10deg);
+}
+.Header__a-More {
+  text-decoration: none;
+  color: var( --Header__a-More);
+  font-size: 1.2rem;
+  padding-right: 0.5rem;
+}
+.Header__a-More:hover {
+  color: var(--Header__a-More-hover);
+  transition: background-color 0.5s ease;
+}
+.Header__icon-Sun {
+  font-size: 2rem;
+  position: relative;
+  top: 1.2rem;
+  right: 0.5rem;
+  text-decoration: none;
+  color: var(--Header__a);
+  cursor: pointer;
+  animation-name: rotate-Sun;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.Header__icon-mask {
+  font-size: 1.5rem;
+  position: relative;
+  top: 0.4rem;
+}
+.Header__icon-books {
+  font-size: 1.5rem;
+  position: relative;
+  top: 0.4rem;
+}
+
+@keyframes rotate-Sun {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Header__nav{
+    flex-direction: column;
+  }
+  .Header__nav-calculator{
+    font-size: 3rem;
+  }
+  .Header__Menu{
+    display: flex;
+  }
+  .Header__nav-div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .Header__nav-link-icon{
+    display: none;
+  }
+  .Header__nav-link-calculator:hover{
+    color: var(--Header__a-More);
+  }
+  .Header__div-sun {
+    position: absolute;
+    left: 4rem;
+    top: .5rem;
+  }
+  .Header__icon-Sun {
+    font-size: 3rem;
+  }
+  .Header__nav-div--ul{
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .Header__nav-div--ul-close{
+    display: none;
+  }
+  .Header__li{
+    padding-bottom: 2rem;
+  }
+  .Header__a{
+    font-size: 3rem;
+    border-bottom: 2px #FFFFFF solid;
+  }
+  .Header__a-More:hover {
+    color: #FFFFFF;
+    transition: none;
+}
+  .Header__icon-mask{
+    display: none;
+  }
+  .Header__icon-books{
+    display: none;
+  }
+  .Header__li-More{
+    border: none;
+    border-bottom: 3px #FFFFFF solid;
+    font-size: 3rem;
+  }
+  .Header__li-More:hover{
+    background: none;
+  } 
+}
+
+@media screen and (max-width: 480px){
+  .Header__Menu{
+    right: 1rem;
+    top: 2rem;
+  }
+  .Header__Menu-Icon{
+    font-size: 3rem;
+  }
+  .Header__div-sun{
+    left: 2rem;
+    top: 1rem;
+  }
+  .Header__icon-Sun{
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 360px){
+  .Header__nav-calculator{
+    font-size: 2rem;
+  }
+  .Header__Menu{
+    right: .5rem;
+    top: 1.4rem;
+  }
+  .Header__Menu-Icon{
+    font-size: 3rem;
+  }
+  .Header__div-sun{
+    left: 1.5rem;
+    top: .3rem;
+  }
+  .Header__icon-Sun{
+    font-size: 2.5rem;
+  }
+  .Header__a{
+    font-size: 2rem;
+  }
+  .Header__a-More{
+    font-size: 2rem;
+  }
+}

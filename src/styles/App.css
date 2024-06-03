@@ -1,0 +1,112 @@
+body {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  --Header-bg: #32373a;
+  --Header-Name: #ffffff;
+
+  --Header__nav-link-icon: #ffffff;
+  --Header__icon-mask: #ffffff;
+  --Header__icon-menu: #ffffff;
+
+  --Header__a: #ffffff;
+
+  --Header__a-More: #ffffff;
+  --Header__a-More-hover: #000000;
+
+  --Icon-link-hover: #76838a;
+
+  --Grid__Container: #09545c;
+  --Grid__button-normal: #ffffff;
+  --Grid__button-normal-color: #000000;
+  --Grid__button-normal-active: #b4bbbe;
+  --Grid__button-delete: #d11010;
+  --Grid__button-delete-active: #d85a5a;
+  --Grid__button-special: #0f9c16;
+  --Grid__button-special-active: #2fc237;
+  --Grid__button-special-colorText: #ffffff;
+  --Grid__color-input-display: #ffffff;
+  --Grid__color-input-result: #d88c0c;
+
+  --Footer__bg: #32373a;
+  --Footer__text-color: #ffffff;
+
+  --Footer__icon-color: #ffffff;
+  --Footer__icon-color-hover: #76838a;
+}
+
+.dark__mode {
+  --Header-bg: #32373a;
+  --Header-Name: #ffffff;
+
+  --Header__nav-link-icon: #ffffff;
+  --Header__icon-mask: #ffffff;
+  --Header__icon-menu: #ffffff;
+
+  --Header__a: #ffffff;
+  --Header__a-hover: #b0b0b0;
+
+  --Header__a-More: #ffffff;
+  --Header__a-More-Background: #ffffff;
+  --Header__a-More-hover: #000000;
+  --Header__li-More: #ffffff;
+
+  --Icon-link-hover: #76838a;
+
+  --Grid__Container: #09545c;
+  --Grid__button-normal: #ffffff;
+  --Grid__button-normal-color: #000000;
+  --Grid__button-normal-active: #b4bbbe;
+  --Grid__button-delete: #d11010;
+  --Grid__button-delete-active: #d85a5a;
+  --Grid__button-special: #0f9c16;
+  --Grid__button-special-active: #2fc237;
+  --Grid__button-special-colorText: #ffffff;
+  --Grid__color-input-display: #ffffff;
+  --Grid__color-input-result: #d88c0c;
+
+  --Footer__bg: #32373a;
+  --Footer__text-color: #ffffff;
+
+  --Footer__icon-color: #ffffff;
+  --Footer__icon-color-hover: #76838a;
+}
+.light__mode {
+  --Header-bg: #ffffff;
+  --Header-Name: #1a1818;
+
+  --Header__nav-link-icon: #ffa500;
+  --Header__icon-mask: #ffa500;
+  --Header__icon-menu: #ffa500;
+
+  --Header__a: #ffa500;
+  --Header__a-hover: #b3750b;
+
+  --Header__a-More: #ffa500;
+  --Header__a-More-Background: #ffa500;
+  --Header__a-More-hover: #ffffff;
+
+  --Header__li-More: #ffa500;
+
+  --Icon-link-hover: #76838a;
+
+  --Grid__Container: #ffffff;
+  --Grid__button-normal: #1b1a1a;
+  --Grid__button-normal-color: #ffffff;
+  --Grid__button-normal-active: #b4bbbe;
+  --Grid__button-delete: #d11010;
+  --Grid__button-delete-active: #d85a5a;
+  --Grid__button-special: #19206b;
+  --Grid__button-special-active: #1928ca;
+  --Grid__button-special-colorText: #ffffff;
+  --Grid__color-input-display: #000000;
+  --Grid__color-input-result: #d88c0c;
+
+  --Footer__bg: #ffffff;
+  --Footer__text-color: #d88c0c;
+
+  --Footer__icon-color: #d88c0c;
+  --Footer__icon-color-hover: #a56e0f;
+}
