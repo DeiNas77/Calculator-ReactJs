@@ -11,6 +11,7 @@ function App() {
   return (
     <main  className={`Theme ${theme}`}>
       <Header/>
+      <PageCalculator></PageCalculator>
       <Routes>
         <Route path="/" element={<PageCalculator></PageCalculator>} />
         <Route path="/documentation" element={<Documentation></Documentation>} />
