@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { FaCalculator, FaSun } from "react-icons/fa";
+import { FaHouseChimney } from "react-icons/fa6";
 import { PiMaskHappy } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
@@ -38,6 +39,15 @@ function Header() {
               menuOpen ? "Header__nav-div--ul" : "Header__nav-div--ul-close"
             }
           >
+             <li className="Header__li">
+              <Link to="/" className="Header__a">
+                <FaHouseChimney
+                  className="Header__icon-books "
+                  href=""
+                ></FaHouseChimney>
+                Home
+              </Link>
+            </li>
             <li className="Header__li">
               <Link to="/documentation" className="Header__a">
                 <ImBooks

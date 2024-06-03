@@ -1,19 +1,22 @@
-import React,{ useContext } from "react";
+import React, { useContext } from "react";
 import Header from "./components/Header";
 import { ThemeContext } from "../context/Context.jsx";
 import { Route, Routes } from "react-router-dom";
-import Documentation from "./components/Pages/Documentation"
+import Documentation from "./components/Pages/Documentation";
 import PageCalculator from "./components/Pages/PageCalculator";
-import Footer from './components/Footer'
+import Footer from "./components/Footer";
 
 function App() {
   const { theme } = useContext(ThemeContext);
   return (
-    <main  className={`Theme ${theme}`}>
+    <main className={`Theme ${theme}`}>
       <Header/>
+      <PageCalculator></PageCalculator>
       <Routes>
-        <Route path="/" element={<PageCalculator></PageCalculator>} />
-        <Route path="/documentation" element={<Documentation></Documentation>} />
+        <Route
+          path="/documentation"
+          element={<Documentation></Documentation>}
+        />
       </Routes>
       <Footer />
     </main>

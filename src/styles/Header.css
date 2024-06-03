@@ -17,10 +17,6 @@
   color: var(--Header__nav-link-icon);
   transition: color 0.2s ease;
 }
-.Header__nav-link-calculator:hover{
-  color:  var(--Header__a-hover);
-
-}
 .Header__nav-link-icon {
   position: relative;
   top: 0.3rem;
