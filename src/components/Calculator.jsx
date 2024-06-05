@@ -52,7 +52,7 @@ function Calculator() {
       let result = ''
       if(data.display.includes('%')){
         let values = data.display.split('%')
-        result = eval(`${values[1]}*${values[0]}/100`)
+        result = eval(`${values[0]}/100`)
       }else{
         result = eval(data.display);
       }
@@ -85,15 +85,12 @@ function Calculator() {
       <Button value="1" type="Button__normal" HandleClick={listenEvent} />
       <Button value="2" type="Button__normal" HandleClick={listenEvent} />
       <Button value="3" type="Button__normal" HandleClick={listenEvent} />
-      <Button value="=" type="Button__special" HandleClick={result} />
+      <Button value={<FiDelete className="Button__icon-delete" />} HandleClick={deleteNumbers} type="Button__delete"/>
       <Button value="+/-" type="Button__special" HandleClick={listenEvent} />
       <Button value="." type="Button__special" HandleClick={listenEvent} />
       <Button value="0" type="Button__normal" HandleClick={listenEvent} />
-      <Button
-        value={<FiDelete className="Button__icon-delete" />}
-        HandleClick={deleteNumbers}
-        type="Button__delete"
-      />
+      <Button value="=" type="Button__equal" HandleClick={result} />
+      
     </div>
   );
 }

@@ -25,6 +25,7 @@ body {
   --Grid__button-delete: #d11010;
   --Grid__button-delete-active: #d85a5a;
   --Grid__button-special: #0f9c16;
+  --Grid__button-equal: #e5830f ;
   --Grid__button-special-active: #2fc237;
   --Grid__button-special-colorText: #ffffff;
   --Grid__color-input-display: #ffffff;
@@ -62,6 +63,7 @@ body {
   --Grid__button-delete: #d11010;
   --Grid__button-delete-active: #d85a5a;
   --Grid__button-special: #0f9c16;
+  --Grid__button-equal: #e5830f ;
   --Grid__button-special-active: #2fc237;
   --Grid__button-special-colorText: #ffffff;
   --Grid__color-input-display: #ffffff;
@@ -99,6 +101,7 @@ body {
   --Grid__button-delete: #d11010;
   --Grid__button-delete-active: #d85a5a;
   --Grid__button-special: #19206b;
+  --Grid__button-equal: #1ca00a ;
   --Grid__button-special-active: #1928ca;
   --Grid__button-special-colorText: #ffffff;
   --Grid__color-input-display: #000000;

@@ -32,7 +32,7 @@
 .Grid__result {
   grid-column: span 4;
   text-align: right;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   background-color: var(--Grid__Container);
   color: var(  --Grid__color-input-result);
   border: none;
@@ -81,11 +81,23 @@
   border: none;
   font-size: 2.5rem;
   height: 4rem;
-  width: 4.5rem;
   border-radius: 0.7rem;
   color: var(--Grid__button-special-colorText);
   background-color: var(--Grid__button-delete);
   cursor: pointer;
+}
+.Button__equal {
+  height: 4rem;
+  width: 100%;
+  border-radius: 0.7rem;
+  font-size: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: var( --Grid__button-special-colorText);
+  background-color: var( --Grid__button-equal);
+  cursor: pointer;
+  transition: background-color 0.4s ease;
 }
 .Button__delete:active{
   background-color: var(--Grid__button-delete-active);
