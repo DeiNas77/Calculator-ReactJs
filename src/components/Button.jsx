@@ -1,6 +1,3 @@
-import React from "react";
-import "../styles/FormCalculator.css";
-
 const Button = (params) => {
   let { value, type, HandleClick } = params;
   return (

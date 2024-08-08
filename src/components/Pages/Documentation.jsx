@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import { ThemeContext } from "../../../context/Context.jsx";
 import "../../styles/StylesCalculator/Documentation.css";
 import logo from "../../assets/Calculator.jpg";
@@ -7,7 +7,7 @@ function Documentation() {
   const { theme } = useContext(ThemeContext);
   return (
     <main className={`Theme ${theme}`}>
-      <div className="Flex__container">
+      <section className="Flex__container">
         <h1 className="Flex__container-tittle">The Calculator</h1>
         <section className="Flex__section">
           <div>
@@ -49,7 +49,7 @@ function Documentation() {
             to delete a single number or to clean up the whole operation.
           </p>
         </section>
-      </div>
+      </section>
     </main>
   );
 }

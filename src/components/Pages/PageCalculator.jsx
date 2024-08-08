@@ -1,13 +1,7 @@
-import React from "react";
 import FormCalculator from "../FormCalculator";
 
-
 function PageCalculator() {
-  return (
-    <div>
-      <FormCalculator />
-    </div>
-  );
+  return <FormCalculator />;
 }
 
 export default PageCalculator;

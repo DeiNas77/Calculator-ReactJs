@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { FaCalculator, FaSun } from "react-icons/fa";
 import { FaHouseChimney } from "react-icons/fa6";
 import { PiMaskHappy } from "react-icons/pi";
@@ -16,12 +16,12 @@ function Header() {
   return (
     <header className="Header__container">
       <nav className="Header__nav">
-        <div className="Header__nav-calculator">
+        <section className="Header__nav-calculator">
           <Link to="/" className="Header__nav-link-calculator">
             <FaCalculator className="Header__nav-link-icon" />
             Calculator
           </Link>
-        </div>
+        </section>
         <div className="Header__Menu">
           <FiMenu
             className="Header__Menu-Icon"
@@ -32,7 +32,7 @@ function Header() {
         </div>
         <div className="Header__nav-div">
           <div className="Header__div-sun">
-            <FaSun className="Header__icon-Sun"  onClick={() => toggleTheme()}/> 
+            <FaSun className="Header__icon-Sun"  onClick={() => toggleTheme(theme)}/> 
           </div>
           <ul
             className={
@@ -75,4 +75,3 @@ function Header() {
 
 export default Header;
 
-//className="Header__nav-div--ul"
