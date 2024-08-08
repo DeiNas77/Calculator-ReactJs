@@ -22,15 +22,15 @@ function Header() {
             Calculator
           </Link>
         </section>
-        <div className="Header__Menu">
+        <section className="Header__Menu">
           <FiMenu
             className="Header__Menu-Icon"
             onClick={() => {
               setMenuOpen(!menuOpen);
             }}
           ></FiMenu>
-        </div>
-        <div className="Header__nav-div">
+        </section>
+        <section className="Header__nav-div">
           <div className="Header__div-sun">
             <FaSun className="Header__icon-Sun"  onClick={() => toggleTheme(theme)}/> 
           </div>
@@ -67,7 +67,7 @@ function Header() {
               </a>
             </li>
           </ul>
-        </div>
+        </section>
       </nav>
     </header>
   );
